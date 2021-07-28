@@ -24,9 +24,9 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         cssLoaderOptions: {
-          esModule: false,
+          esModule: true,
           modules: {
-            namedExport: false,
+            namedExport: true,
           },
         },
       },

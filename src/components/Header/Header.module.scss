@@ -1,0 +1,23 @@
+@import '@styles/variables/all';
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 30px;
+  @media (max-width: $xxsm) {
+    flex-direction: column;
+  }
+}
+
+.menuItem {
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+.menuLink {
+  text-decoration: none;
+  &:hover {
+    background-color: $green;
+  }
+}

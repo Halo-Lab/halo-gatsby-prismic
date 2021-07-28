@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/Halo-Lab/halo-gatsby-prismic/actions/workflows/node.js.yml/badge.svg)](https://github.com/Halo-Lab/halo-gatsby-prismic/actions/workflows/node.js.yml)
+
 # Halo Lab Gatsby-Prismic public starter
 
 This site is built with [Prismic CMS](https://prismic.io/), [Gatsby](https://www.gatsbyjs.com/).

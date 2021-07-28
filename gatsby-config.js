@@ -48,7 +48,7 @@ module.exports = {
         icons: [
           {
             src: `static/images/meta/tile.png`,
-            sizes: '310x310',
+            sizes: '640x640',
             type: 'image/png',
             purpose: 'any maskable',
           },

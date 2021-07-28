@@ -1,0 +1,70 @@
+{
+  "name": "halo-gatsby-prismic",
+  "private": true,
+  "description": "Halo Lab Prismis-Gatsby starter",
+  "version": "1.0.0",
+  "author": "Halo Lab",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "gatsby": "^3.10.2",
+    "gatsby-background-image": "^1.5.3",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-image": "^1.10.1",
+    "gatsby-plugin-manifest": "^3.9.0",
+    "gatsby-plugin-offline": "^4.9.0",
+    "gatsby-plugin-preact": "^5.9.0",
+    "gatsby-plugin-prismic-previews": "^4.0.2",
+    "gatsby-plugin-react-helmet": "^4.9.0",
+    "gatsby-plugin-react-svg": "^3.0.1",
+    "gatsby-plugin-robots-txt": "^1.6.8",
+    "gatsby-plugin-sass": "^4.9.0",
+    "gatsby-plugin-sharp": "^3.9.0",
+    "gatsby-plugin-sitemap": "^2.4.0",
+    "gatsby-source-filesystem": "^3.9.0",
+    "gatsby-source-prismic": "^4.0.0",
+    "gatsby-transformer-sharp": "^3.9.0",
+    "intersection-observer": "^0.12.0",
+    "node-sass": "^6.0.1",
+    "preact": "^10.5.14",
+    "preact-render-to-string": "^5.1.19",
+    "prismic-reactjs": "^1.3.4",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.24.0",
+    "gatsby-plugin-eslint": "^3.0.0",
+    "prettier": "2.0.5"
+  },
+  "keywords": [
+    "gatsby",
+    "prismic",
+    "halo lab"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --fix --ext .js,.jsx .",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

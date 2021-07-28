@@ -1,0 +1,187 @@
+{
+  "Main" : { },
+  "Header" : {
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "logo" : {
+            "type" : "Slice",
+            "fieldset" : "Logo",
+            "description" : "Logo",
+            "icon" : "accessibility",
+            "display" : "list",
+            "non-repeat" : {
+              "logo" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Logo"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "menu" : {
+            "type" : "Slice",
+            "fieldset" : "Menu",
+            "description" : "Menu",
+            "icon" : "add_circle",
+            "display" : "list",
+            "non-repeat" : {
+              "buttontext" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Button text",
+                  "placeholder" : "Add button text"
+                }
+              },
+              "buttonlink" : {
+                "type" : "Link",
+                "config" : {
+                  "allowTargetBlank" : true,
+                  "label" : "Button link",
+                  "placeholder" : "Add button link",
+                  "select" : null
+                }
+              }
+            },
+            "repeat" : {
+              "menuitem" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Menu item",
+                  "placeholder" : "Add menu item name"
+                }
+              },
+              "itemlink" : {
+                "type" : "Link",
+                "config" : {
+                  "allowTargetBlank" : true,
+                  "label" : "Menu item link",
+                  "placeholder" : "Add menu item link",
+                  "select" : null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Footer" : {
+    "body1" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "logo" : {
+            "type" : "Slice",
+            "fieldset" : "Logo",
+            "description" : "Logo",
+            "icon" : "accessibility",
+            "display" : "list",
+            "non-repeat" : {
+              "logo" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Logo"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "menu" : {
+            "type" : "Slice",
+            "fieldset" : "Menu",
+            "description" : "Menu",
+            "icon" : "add_circle",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "menuitem" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Menu item name",
+                  "placeholder" : "Add menu item"
+                }
+              },
+              "itemlink" : {
+                "type" : "Link",
+                "config" : {
+                  "allowTargetBlank" : true,
+                  "label" : "Menu item link",
+                  "placeholder" : "Add menu item link",
+                  "select" : null
+                }
+              }
+            }
+          },
+          "submenu" : {
+            "type" : "Slice",
+            "fieldset" : "Submenu",
+            "description" : "Additional menu",
+            "icon" : "add_box",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "menuitem" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Menu item name",
+                  "placeholder" : "Add menu item name"
+                }
+              },
+              "itemlink" : {
+                "type" : "Link",
+                "config" : {
+                  "allowTargetBlank" : true,
+                  "label" : "Menu item link",
+                  "placeholder" : "Add menu item link",
+                  "select" : null
+                }
+              }
+            }
+          },
+          "social_links" : {
+            "type" : "Slice",
+            "fieldset" : "Social links",
+            "description" : "Social links",
+            "icon" : "child_care",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "sociallogo" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Social logo"
+                }
+              },
+              "sociallink" : {
+                "type" : "Link",
+                "config" : {
+                  "allowTargetBlank" : true,
+                  "label" : "Social link",
+                  "placeholder" : "Add social link",
+                  "select" : null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

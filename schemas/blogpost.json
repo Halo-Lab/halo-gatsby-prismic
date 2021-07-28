@@ -1,0 +1,136 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "Page UID",
+        "placeholder" : "Add page UID"
+      }
+    },
+    "cover" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Cover image"
+      }
+    },
+    "posttitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Post title",
+        "placeholder" : "Add post title"
+      }
+    },
+    "author" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Author name",
+        "placeholder" : "Add author name"
+      }
+    },
+    "date" : {
+      "type" : "Date",
+      "config" : {
+        "label" : "Date",
+        "placeholder" : "Add post publishing date"
+      }
+    },
+    "postcontent" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+        "allowTargetBlank" : true,
+        "label" : "Post content",
+        "placeholder" : "Add post content"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : { },
+        "choices" : {
+          "form" : {
+            "type" : "Slice",
+            "fieldset" : "Form",
+            "description" : "Form",
+            "icon" : "dehaze",
+            "display" : "list",
+            "non-repeat" : {
+              "formtitle" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2,heading3,heading4",
+                  "label" : "Form title",
+                  "placeholder" : "Add form title"
+                }
+              },
+              "adress" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Adress",
+                  "placeholder" : "Add adress field label"
+                }
+              },
+              "firstname" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "First Name",
+                  "placeholder" : "Add first name field label"
+                }
+              },
+              "lastname" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Last Name",
+                  "placeholder" : "Add last name field label"
+                }
+              },
+              "birthdate" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Birthdate",
+                  "placeholder" : "Add birthdate field label"
+                }
+              }
+            },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  },
+  "SEO" : {
+    "metatitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Metatitle",
+        "placeholder" : "Add metatitle (up to 65 symbols)"
+      }
+    },
+    "metadescription" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Metadescription",
+        "placeholder" : "Add metadescription (up to 160 symbols)"
+      }
+    },
+    "canonical" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Canonical URL",
+        "placeholder" : "Add canonical URL"
+      }
+    }
+  }
+}

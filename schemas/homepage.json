@@ -1,0 +1,223 @@
+{
+  "Main" : {
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "hero" : {
+            "type" : "Slice",
+            "fieldset" : "Hero",
+            "description" : "Hero",
+            "icon" : "account_circle",
+            "display" : "list",
+            "non-repeat" : {
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1",
+                  "label" : "title",
+                  "placeholder" : "Add hero title"
+                }
+              },
+              "heroimage" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Hero image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "feature" : {
+            "type" : "Slice",
+            "fieldset" : "Feature",
+            "description" : "Feature",
+            "icon" : "android",
+            "display" : "list",
+            "non-repeat" : {
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2,heading3,heading4",
+                  "label" : "Feature title",
+                  "placeholder" : "Add feature title"
+                }
+              },
+              "description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                  "allowTargetBlank" : true,
+                  "label" : "Feature description",
+                  "placeholder" : "Add feature description"
+                }
+              },
+              "featureimage" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Feature image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "benefits" : {
+            "type" : "Slice",
+            "fieldset" : "Benefits",
+            "description" : "Benefits",
+            "icon" : "attach_money",
+            "display" : "list",
+            "non-repeat" : {
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2,heading3,heading4,heading5,heading6",
+                  "label" : "Benefits title",
+                  "placeholder" : "Add benefits section title"
+                }
+              }
+            },
+            "repeat" : {
+              "icon" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Benefit icon"
+                }
+              },
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2,heading3,heading4,heading5,heading6",
+                  "label" : "Benefit title",
+                  "placeholder" : "Add benefit title"
+                }
+              },
+              "description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                  "allowTargetBlank" : true,
+                  "label" : "Benefit description",
+                  "placeholder" : "Add benefit description"
+                }
+              }
+            }
+          },
+          "conversion" : {
+            "type" : "Slice",
+            "fieldset" : "Conversion",
+            "description" : "Conversion",
+            "icon" : "beenhere",
+            "display" : "list",
+            "non-repeat" : {
+              "cta" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,heading3,heading4,heading5,heading6,strong,em",
+                  "allowTargetBlank" : true,
+                  "label" : "CTA text",
+                  "placeholder" : "Add Call to action"
+                }
+              },
+              "placeholder" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "allowTargetBlank" : true,
+                  "label" : "Input text",
+                  "placeholder" : "Add input placeholder text"
+                }
+              },
+              "buttontext" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Button text",
+                  "placeholder" : "Add button text"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "testimonial" : {
+            "type" : "Slice",
+            "fieldset" : "Testimonial",
+            "description" : "Testimonial",
+            "icon" : "brightness_low",
+            "display" : "list",
+            "non-repeat" : {
+              "image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Testimonial image"
+                }
+              },
+              "title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2,heading3,heading4,heading5,heading6",
+                  "label" : "Testimonial title",
+                  "placeholder" : "Add testimonial title"
+                }
+              },
+              "name" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Author name",
+                  "placeholder" : "Add author name"
+                }
+              },
+              "testimonial" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                  "allowTargetBlank" : true,
+                  "label" : "Testimonial text",
+                  "placeholder" : "Add testimonial"
+                }
+              }
+            },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  },
+  "SEO" : {
+    "metatitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Metatitle",
+        "placeholder" : "Add metatitle — up to 60 characters recommended"
+      }
+    },
+    "metadescription" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Metadescription",
+        "placeholder" : "Add meta description, up to 160 characters recommended"
+      }
+    },
+    "canonical" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Canonical URL",
+        "placeholder" : "Add canonical URL"
+      }
+    }
+  }
+}

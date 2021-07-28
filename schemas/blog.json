@@ -1,0 +1,105 @@
+{
+  "Main" : {
+    "blogtitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Blog title",
+        "placeholder" : "Add blog title"
+      }
+    },
+    "buttontext" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "CTA button text",
+        "placeholder" : "Add CTA button text"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "form" : {
+            "type" : "Slice",
+            "fieldset" : "Form",
+            "description" : "Form",
+            "icon" : "dehaze",
+            "display" : "list",
+            "non-repeat" : {
+              "formtitle" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading2,heading3,heading4",
+                  "label" : "Form title",
+                  "placeholder" : "Add form title"
+                }
+              },
+              "adress" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Adress",
+                  "placeholder" : "Add adress field label"
+                }
+              },
+              "firstname" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "First Name",
+                  "placeholder" : "Add first name field label"
+                }
+              },
+              "lastname" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Last Name",
+                  "placeholder" : "Add last name field label"
+                }
+              },
+              "birthdate" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph",
+                  "label" : "Birthdate",
+                  "placeholder" : "Add birthdate field label"
+                }
+              }
+            },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  },
+  "SEO" : {
+    "metatitle" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "Metatitle",
+        "placeholder" : "Add metatitle (up to 65 characters recommended)"
+      }
+    },
+    "metadescription" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "Metadescription",
+        "placeholder" : "Add metadescription"
+      }
+    },
+    "canonical" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "Canonical URL",
+        "placeholder" : "Add canonical URL"
+      }
+    }
+  }
+}

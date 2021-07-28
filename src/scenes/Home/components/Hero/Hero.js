@@ -3,13 +3,15 @@ import { object } from 'prop-types';
 import { RichText } from 'prismic-reactjs';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
+import { hero, heroTitle } from './Hero.module.scss';
+
 const Hero = ({ primary }) => {
   const { heroimage: heroImage, title } = primary;
   const { gatsbyImageData, alt } = heroImage;
 
   return (
-    <div className="hero d-flex justify-content-between mb-5">
-      <div className="hero-title align-self-center">
+    <div className={hero}>
+      <div className={heroTitle}>
         <RichText render={title.raw} />
       </div>
       <GatsbyImage image={gatsbyImageData} alt={alt} />

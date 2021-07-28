@@ -1,0 +1,24 @@
+@import '@styles/variables/all';
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+
+.featureDescription {
+  max-width: 50%;
+  align-self: center;
+  text-align: center;
+
+  @media (max-width: $lg) {
+    max-width: 100%;
+    align-self: flex-start;
+    text-align: left;
+  }
+}

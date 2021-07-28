@@ -1,0 +1,15 @@
+@import '@styles/variables/all';
+
+.benefitsSection {
+  margin-bottom: 50px;
+}
+
+.benefitsItems {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.benefit {
+  flex: 1 1 300px;
+}

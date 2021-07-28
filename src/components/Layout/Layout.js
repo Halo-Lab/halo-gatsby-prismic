@@ -1,13 +1,10 @@
 import React from 'react';
 import { object, node } from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import { withPrismicPreview } from 'gatsby-plugin-prismic-previews';
 
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 import Head from '@components/Head';
-import linkResolver from '../../../prismic/utils/linkResolver';
-import { prismicRepositoryName } from '../../../prismic-config';
 
 const Layout = ({ children, data, canonical, metatitle, metadescription }) => {
   const { node: layoutContent } = data.allPrismicLayout.edges[0];
@@ -44,7 +41,6 @@ const LayoutWithData = (props) => {
           allPrismicLayout {
             edges {
               node {
-                _previewable
                 type
                 lang
                 id
@@ -148,17 +144,7 @@ const LayoutWithData = (props) => {
           }
         }
       `}
-      render={withPrismicPreview(
-        (data) => (
-          <Layout data={data} {...props} />
-        ),
-        [
-          {
-            repositoryName: prismicRepositoryName,
-            linkResolver,
-          },
-        ]
-      )}
+      render={(data) => <Layout data={data} {...props} />}
     />
   );
 };

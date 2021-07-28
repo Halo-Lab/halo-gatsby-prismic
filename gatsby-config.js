@@ -14,12 +14,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-prismic-previews',
-      options: {
-        repositoryName: prismicRepositoryName,
-      },
-    },
-    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: ['/preview'],
@@ -96,14 +90,6 @@ module.exports = {
           '@scenes': 'src/scenes',
         },
         extensions: ['js', 'sass', 'scss'],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: /\.inline\.svg$/,
-        },
       },
     },
     {

@@ -18,9 +18,11 @@ const Benefits = ({ primary, items }) => {
   });
 
   return (
-    <div className="feature">
+    <div className="benefits">
       <RichText render={title.raw} />
-      {benefits}
+      <div className="benefits-items d-flex flex-wrap justify-content-around mb-5">
+        {benefits}
+      </div>
     </div>
   );
 };

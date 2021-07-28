@@ -7,11 +7,21 @@ const Testimonial = ({ primary }) => {
   const { url: imageUrl, alt } = image;
 
   return (
-    <div className="testimonial">
+    <div className="testimonial mb-5">
       <RichText render={title.raw} />
-      <img src={imageUrl} alt={alt} loading="lazy" width="500" />
-      <RichText render={name.raw} />
-      <RichText render={testimonial.raw} />
+      <div className="d-flex justify-content-between">
+        <img
+          src={imageUrl}
+          alt={alt}
+          loading="lazy"
+          width="500"
+          className="flex-fill"
+        />
+        <div className="testimonial-description align-self-center text-center">
+          <RichText render={name.raw} />
+          <RichText render={testimonial.raw} />
+        </div>
+      </div>
     </div>
   );
 };

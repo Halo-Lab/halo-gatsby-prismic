@@ -9,6 +9,10 @@ const Head = ({ metatitle, metadescription, canonical }) => {
 
   return (
     <Helmet>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      ></meta>
       <title>{title}</title>
       <meta content={description} name="description" />
       <link rel="canonical" href={canonicalUrl} />

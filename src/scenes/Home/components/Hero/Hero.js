@@ -8,8 +8,10 @@ const Hero = ({ primary }) => {
   const { gatsbyImageData, alt } = heroImage;
 
   return (
-    <div className="hero">
-      <RichText render={title.raw} />
+    <div className="hero d-flex justify-content-between mb-5">
+      <div className="hero-title align-self-center">
+        <RichText render={title.raw} />
+      </div>
       <GatsbyImage image={gatsbyImageData} alt={alt} />
     </div>
   );

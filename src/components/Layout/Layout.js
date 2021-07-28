@@ -12,7 +12,7 @@ const Layout = ({ children, data, canonical, metatitle, metadescription }) => {
   const { body: headerData, body1: footerData } = layoutData;
 
   return (
-    <div className="layout">
+    <div className="layout container">
       <Head
         canonical={canonical}
         metatitle={metatitle}

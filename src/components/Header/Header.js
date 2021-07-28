@@ -30,7 +30,7 @@ const Header = ({ data }) => {
   const { buttonlink: buttonLink, buttontext: buttonText } = primary;
 
   return (
-    <header className="header">
+    <header className="header mb-5">
       <div className="hero-image" style={{ width: 64 }}>
         <Link to="/">
           <GatsbyImage image={gatsbyImageData} alt={alt} />

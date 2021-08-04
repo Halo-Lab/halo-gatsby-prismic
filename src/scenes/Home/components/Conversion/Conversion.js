@@ -5,11 +5,20 @@ const Conversion = ({ primary }) => {
   const { buttontext, cta, placeholder } = primary;
 
   return (
-    <div className="conversion">
+    <div className="conversion mb-5">
       <h3>{cta.text}</h3>
       <form>
-        <input type="email" placeholder={placeholder.text} />
-        <button>{buttontext.text}</button>
+        <label htmlFor="exampleInputEmail1" className="form-label">
+          {placeholder.text}
+        </label>
+        <input
+          type="email"
+          className="form-control mb-3"
+          aria-describedby="emailHelp"
+        ></input>
+        <button type="submit" className="btn btn-primary">
+          {buttontext.text}
+        </button>
       </form>
     </div>
   );

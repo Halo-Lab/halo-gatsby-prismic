@@ -3,6 +3,8 @@ import { array } from 'prop-types';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
+import { menu, menuItem, menuLink } from './Header.module.scss';
+
 const renderMenu = (items) => {
   const menu = items.map((item, index) => {
     const { itemlink, menuitem } = item;
@@ -10,8 +12,10 @@ const renderMenu = (items) => {
     const { text: itemText } = menuitem;
 
     return (
-      <li key={index}>
-        <Link to={url}>{itemText}</Link>
+      <li key={index} className={menuItem}>
+        <Link to={url} className={menuLink}>
+          {itemText}
+        </Link>
       </li>
     );
   });
@@ -27,17 +31,21 @@ const Header = ({ data }) => {
   const { logo } = logoContent;
   const { gatsbyImageData, alt } = logo;
   const { primary, items: menuItems } = menuSection;
-  const { buttonlink: buttonLink, buttontext: buttonText } = primary;
+  const { buttontext: buttonText } = primary;
 
   return (
-    <header className="header">
+    <header className="header navbar pt-3 mb-5">
       <div className="hero-image" style={{ width: 64 }}>
         <Link to="/">
-          <GatsbyImage image={gatsbyImageData} alt={alt} />
+          <GatsbyImage image={gatsbyImageData} alt={alt} loading="eager" />
         </Link>
       </div>
-      <ul className="menu">{renderMenu(menuItems)}</ul>
-      <a href={buttonLink.url}>{buttonText.text}</a>
+      <div className="d-flex">
+        <ul className={menu}>{renderMenu(menuItems)}</ul>
+        <button className="btn btn-outline-success me-2" type="button">
+          {buttonText.text}
+        </button>
+      </div>
     </header>
   );
 };

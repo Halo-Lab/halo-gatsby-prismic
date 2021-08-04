@@ -96,7 +96,7 @@ export const query = graphql`
                   featureimage {
                     url
                     alt
-                    gatsbyImageData(layout: FIXED, placeholder: BLURRED)
+                    gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
                   }
                   description {
                     raw
@@ -110,7 +110,7 @@ export const query = graphql`
                   heroimage {
                     alt
                     url
-                    gatsbyImageData(layout: FIXED, placeholder: BLURRED)
+                    gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
                   }
                   title {
                     raw

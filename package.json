@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Halo Lab",
   "dependencies": {
+    "bootstrap": "^5.0.2",
     "gatsby": "^3.10.2",
     "gatsby-background-image": "^1.5.3",
     "gatsby-plugin-alias-imports": "^1.0.5",

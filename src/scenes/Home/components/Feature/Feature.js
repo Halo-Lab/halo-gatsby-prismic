@@ -11,7 +11,7 @@ const Feature = ({ primary }) => {
 
   return (
     <div className={feature}>
-      <GatsbyImage image={gatsbyImageData} alt={alt} />
+      <GatsbyImage image={gatsbyImageData} alt={alt} loading="eager" />
       <div className={featureDescription}>
         <RichText render={title.raw} />
         <RichText render={description.raw} />

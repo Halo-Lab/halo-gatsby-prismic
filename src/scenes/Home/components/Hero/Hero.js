@@ -14,7 +14,7 @@ const Hero = ({ primary }) => {
       <div className={heroTitle}>
         <RichText render={title.raw} />
       </div>
-      <GatsbyImage image={gatsbyImageData} alt={alt} />
+      <GatsbyImage image={gatsbyImageData} alt={alt} loading="eager" />
     </div>
   );
 };

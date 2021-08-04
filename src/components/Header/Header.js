@@ -37,7 +37,7 @@ const Header = ({ data }) => {
     <header className="header navbar pt-3 mb-5">
       <div className="hero-image" style={{ width: 64 }}>
         <Link to="/">
-          <GatsbyImage image={gatsbyImageData} alt={alt} />
+          <GatsbyImage image={gatsbyImageData} alt={alt} loading="eager" />
         </Link>
       </div>
       <div className="d-flex">

@@ -33,7 +33,7 @@ const PostPage = ({ content }) => {
 
   return (
     <div className="post">
-      <GatsbyImage image={gatsbyImageData} alt={alt} />
+      <GatsbyImage image={gatsbyImageData} alt={alt} loading="eager" />
       <RichText render={postTitle.raw} />
       <div>Published: {date}</div>
       <div>Written by: {author.text}</div>

@@ -2,7 +2,11 @@ import React from 'react';
 import { object, array } from 'prop-types';
 import { RichText } from 'prismic-reactjs';
 
-import { benefitsSection, benefitsItems, benefit } from './Benefits.module.scss';
+import {
+  benefitsSection,
+  benefitsItems,
+  benefit,
+} from './Benefits.module.scss';
 
 const Benefits = ({ primary, items }) => {
   const { title } = primary;

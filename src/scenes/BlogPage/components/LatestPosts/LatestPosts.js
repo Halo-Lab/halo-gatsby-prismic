@@ -19,7 +19,7 @@ const renderPosts = (posts) => {
     return (
       <div className="postCard" key={`${postTitle.text}, ${date}`}>
         <div className="card-image" style={{ width: 250 }}>
-          <GatsbyImage image={gatsbyImageData} alt={alt} />
+          <GatsbyImage image={gatsbyImageData} alt={alt} loading="eager" />
         </div>
         <h3>{postTitle.text}</h3>
         <div>Written by {author.text}</div>

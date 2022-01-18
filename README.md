@@ -1,4 +1,4 @@
-[![Node.js CI]
+[![Node.js CI](https://github.com/Halo-Lab/halo-gatsby-prismic/actions/workflows/node.js.yml/badge.svg)](https://github.com/Halo-Lab/halo-gatsby-prismic/actions/workflows/node.js.yml)
 
 # Halo Lab Gatsby-Prismic public starter
 

@@ -1,4 +1,4 @@
-[![Node.js CI](https://github.com/Halo-Lab/halo-gatsby-prismic/actions/workflows/node.js.yml/badge.svg)](https://github.com/Halo-Lab/halo-gatsby-prismic/actions/workflows/node.js.yml)
+[![Node.js CI]
 
 <a href="https://www.halo-lab.com/?utm_source=github-halo-lab">
   <img src="http://api.halo-lab.com/wp-content/uploads/dev_halo.svg"
@@ -46,3 +46,11 @@ If you need just check that build is ok, run `make build`.
 If build is live, commit changes to GitHub repository. 
 
 Visit test site and check your changes. If everything is ok, ask your buddy to review changes. After review is done and code is fixed, you can merge pull request.
+
+## Word from author
+
+Have fun! ✌️
+
+<a href="https://www.halo-lab.com/?utm_source=github">
+  <img src="https://dgestran.sirv.com/Images/supported-by-halolab.png" alt="Supported by Halo lab" height="60">
+</a>
